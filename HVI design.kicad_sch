@@ -2082,194 +2082,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_3_Bridged12"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at -2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_3_Bridged12"
-				(at 0 2.794 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPDT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*3Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_3_Bridged12_0_0"
-				(circle
-					(center -3.302 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.302 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_3_Bridged12_0_1"
-				(arc
-					(start -3.048 0.508)
-					(mid -1.651 0.9912)
-					(end -0.254 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_3_Bridged12_1_1"
-				(pin passive line
-					(at -6.35 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "LT8316IFE_PBF:LT8316EFE"
 			(pin_names
 				(offset 1.016)
@@ -3104,9 +2916,9 @@
 		)
 		(uuid "22e57a93-86fd-4b15-9f7f-f5359f350529")
 	)
-	(text "output = high when TSAC voltage is 60V, as the \n1/20 scaled TSAC voltage is compared to a \n12V voltage from the eval board\noutput."
+	(text "output = high when measured voltage \nis 57.6V, as the 1/20 scaled voltage \nis compared to the 12V output from \nthe eval board.\n"
 		(exclude_from_sim no)
-		(at 288.544 203.2 0)
+		(at 288.544 217.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3124,6 +2936,16 @@
 		)
 		(uuid "3dffa2e6-cfe8-432e-a84a-a80258c3705a")
 	)
+	(text "V is scaled by 1/20 as the TV comparator \nhas a maximum voltage rating of 36V, so \nusing this divider the max input (450V detected) \nwill be ~22.5V, and at 60V measured voltage the \noutput will be 3V."
+		(exclude_from_sim no)
+		(at 99.822 244.856 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4a4e5e85-ce1d-448a-a4c6-e2f60717be87")
+	)
 	(text "(soon to be high voltage indicator LCD screen)"
 		(exclude_from_sim no)
 		(at 41.148 20.574 0)
@@ -3134,6 +2956,16 @@
 		)
 		(uuid "5abd4b57-1ee9-480e-87cc-50ab4f3e1223")
 	)
+	(text "~450V max\n"
+		(exclude_from_sim no)
+		(at 101.092 99.314 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5cd27913-163f-4884-9ba9-1ce84b523a74")
+	)
 	(text "Demonstration circuit 2781A is a nonisolated buck converter \nfeaturing the LT8316. The demo board outputs 12V and maintains \ntight regulation with a load current from 10mA to 0.2A. It is \noptimized to operate over a wide 19V to 600V DC input voltage \nrange. Output voltage accuracy stays within ±1% over the entire \ninput voltage and load range."
 		(exclude_from_sim no)
 		(at 306.832 89.408 0)
@@ -3143,6 +2975,16 @@
 			)
 		)
 		(uuid "8586ab8a-55df-4f73-9c60-0a1c76e43dbd")
+	)
+	(text "A 2.88V reference voltage is used to \ncompensate for the fact that the DC2718 \ncan output 11.6-12.4V, so when the DC2718A \noutputs 12V the V threshold for comparator \noutput becomes 57.6V."
+		(exclude_from_sim no)
+		(at 366.776 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "85f319e5-099a-4e41-b716-4f49493f44cb")
 	)
 	(text "12V \n10-200mA"
 		(exclude_from_sim no)
@@ -3164,6 +3006,16 @@
 		)
 		(uuid "c43aec5b-6e57-4658-8831-1d79750c941e")
 	)
+	(text "3V when V=60V"
+		(exclude_from_sim no)
+		(at 308.864 187.198 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ccb3c047-35f4-4615-9a68-20c650fd671b")
+	)
 	(text "Vin-"
 		(exclude_from_sim no)
 		(at 103.632 109.474 0)
@@ -3184,7 +3036,7 @@
 		)
 		(uuid "e691f1ba-c668-44f4-923c-c8d21dd9a058")
 	)
-	(text "Voltage divider to take 1/5 of the V from TSAC"
+	(text "Voltage divider to take 1/20 of the V from vehicle side of AIR's"
 		(exclude_from_sim no)
 		(at 45.466 220.472 0)
 		(effects
@@ -3339,12 +3191,6 @@
 		(uuid "9220483d-ea2a-4b7f-a925-a8d6ca13b077")
 	)
 	(junction
-		(at 331.47 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9f8106fc-e407-4c98-a5e8-a60fc7db30e4")
-	)
-	(junction
 		(at 38.1 267.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3363,22 +3209,10 @@
 		(uuid "aebf3e29-b54d-4fab-a6e8-f7ce3c446de7")
 	)
 	(junction
-		(at 213.36 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b6f97da6-e771-4f82-80da-b99c5c741119")
-	)
-	(junction
 		(at 284.48 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb43b795-f1a1-4fae-9c4f-ad1c08485ea4")
-	)
-	(junction
-		(at 228.6 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfd8588e-68ae-413f-b40d-0859522257d9")
 	)
 	(junction
 		(at 237.49 143.51)
@@ -3417,6 +3251,12 @@
 		(uuid "f4a1f3c1-1cec-4096-9781-918552d9ff77")
 	)
 	(junction
+		(at 331.47 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6c8855d-c5d6-4e08-9540-a40f5d35edd6")
+	)
+	(junction
 		(at 38.1 232.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3453,16 +3293,6 @@
 			(type default)
 		)
 		(uuid "01656b1c-351b-40de-a304-2b712571d505")
-	)
-	(wire
-		(pts
-			(xy 358.14 193.04) (xy 299.72 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "022c2557-fa98-4f89-90f4-97ff11ff4df8")
 	)
 	(wire
 		(pts
@@ -3616,7 +3446,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 143.51) (xy 220.98 143.51)
+			(xy 299.72 193.04) (xy 331.47 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25de37fa-3227-4156-9f90-3adb057c2911")
+	)
+	(wire
+		(pts
+			(xy 220.98 143.51) (xy 237.49 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3806,6 +3646,16 @@
 	)
 	(wire
 		(pts
+			(xy 331.47 193.04) (xy 331.47 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46093021-29fe-4efe-b360-159f8d86b378")
+	)
+	(wire
+		(pts
 			(xy 87.63 90.17) (xy 87.63 91.44)
 		)
 		(stroke
@@ -3823,16 +3673,6 @@
 			(type default)
 		)
 		(uuid "46d795d4-c615-4d0a-836d-bc57b9de5c92")
-	)
-	(wire
-		(pts
-			(xy 331.47 187.96) (xy 331.47 196.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a9fde9d-2232-4460-a9df-6af4c1c95ab6")
 	)
 	(wire
 		(pts
@@ -3926,6 +3766,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 127) (xy 213.36 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68f0915c-3e93-4233-8384-8f31b6a85c0a")
+	)
+	(wire
+		(pts
 			(xy 199.39 128.27) (xy 199.39 127)
 		)
 		(stroke
@@ -3953,26 +3803,6 @@
 			(type default)
 		)
 		(uuid "717fdb21-d714-43fd-a8ba-e4f4aa9df577")
-	)
-	(wire
-		(pts
-			(xy 220.98 143.51) (xy 213.36 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74d7cbc1-42c2-41d9-a70d-6b47e1a106c6")
-	)
-	(wire
-		(pts
-			(xy 228.6 153.67) (xy 228.6 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fce1ba2-bd0a-4c40-b402-0508ba403cfb")
 	)
 	(wire
 		(pts
@@ -4076,16 +3906,6 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 187.96) (xy 331.47 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9937618f-f747-4dd0-acfe-8fb94471ff54")
-	)
-	(wire
-		(pts
 			(xy 87.63 106.68) (xy 87.63 107.95)
 		)
 		(stroke
@@ -4106,7 +3926,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 143.51) (xy 213.36 143.51)
+			(xy 199.39 143.51) (xy 220.98 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4156,26 +3976,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 153.67) (xy 228.6 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b76dba6c-8fd1-4047-9ca2-b234f484e7bd")
-	)
-	(wire
-		(pts
-			(xy 201.93 153.67) (xy 207.01 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7b3ffce-8e78-42f7-a026-c9fc18c4b53c")
-	)
-	(wire
-		(pts
 			(xy 250.19 143.51) (xy 250.19 113.03)
 		)
 		(stroke
@@ -4213,16 +4013,6 @@
 			(type default)
 		)
 		(uuid "c4150387-479a-4727-9b4c-0267b0c76d7f")
-	)
-	(wire
-		(pts
-			(xy 213.36 143.51) (xy 213.36 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4e3cba1-af8a-49d8-85fb-7e2d5cad80f2")
 	)
 	(wire
 		(pts
@@ -4416,16 +4206,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 127) (xy 213.36 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e804235d-7c15-4057-9e74-bcbb90101182")
-	)
-	(wire
-		(pts
 			(xy 250.19 113.03) (xy 256.54 113.03)
 		)
 		(stroke
@@ -4443,16 +4223,6 @@
 			(type default)
 		)
 		(uuid "ea9d0c5a-cb8f-462e-947e-cb01644ac43e")
-	)
-	(wire
-		(pts
-			(xy 228.6 143.51) (xy 237.49 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebab1523-3e73-4a04-bd9b-c675829a9c9c")
 	)
 	(wire
 		(pts
@@ -4546,13 +4316,23 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 184.15) (xy 331.47 187.96)
+			(xy 331.47 184.15) (xy 331.47 193.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f3e0e3aa-e0c7-4927-8ded-85b6150c9656")
+	)
+	(wire
+		(pts
+			(xy 299.72 187.96) (xy 339.09 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5994216-eb46-4a00-9436-f02b98e2a6c2")
 	)
 	(wire
 		(pts
@@ -4654,9 +4434,19 @@
 		)
 		(uuid "d03d1d18-a7b9-404a-88af-24709ebbc859")
 	)
+	(label "2.88V_reference"
+		(at 302.26 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d910f208-cac6-4fe9-be7c-dd3752dc4aab")
+	)
 	(global_label "1/20_V_divider"
 		(shape input)
-		(at 358.14 193.04 0)
+		(at 339.09 187.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4666,7 +4456,7 @@
 		)
 		(uuid "281c9e71-b528-4122-9582-dc264a460268")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 374.2485 193.04 0)
+			(at 355.1985 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4722,7 +4512,7 @@
 	)
 	(global_label "INTVcc"
 		(shape input)
-		(at 201.93 153.67 180)
+		(at 213.36 129.54 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4732,7 +4522,7 @@
 		)
 		(uuid "981b8fcc-6a5b-449e-b07a-4b0b89ad8c07")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.7761 153.67 0)
+			(at 213.36 138.6939 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5242,77 +5032,6 @@
 			(project ""
 				(path "/6e774aff-27e0-4346-9be8-67b840f3c91a"
 					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_3_Bridged12")
-		(at 213.36 153.67 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a3e20ca-c387-4ac1-aa1c-48d144242f18")
-		(property "Reference" "JP1"
-			(at 213.36 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_3_Bridged12"
-			(at 213.36 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-			(at 213.36 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ff9ab764-475a-443a-88a0-aa4705fff9b1")
-		)
-		(pin "1"
-			(uuid "eafb3fff-ae2f-44f2-b1c8-a56081ad8655")
-		)
-		(pin "3"
-			(uuid "3425ea74-7d6b-4e1b-baf0-18ee318327bd")
-		)
-		(instances
-			(project ""
-				(path "/6e774aff-27e0-4346-9be8-67b840f3c91a"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -6029,7 +5748,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "30k"
+		(property "Value" "31.6k"
 			(at 334.01 181.6099 0)
 			(effects
 				(font
@@ -6642,16 +6361,16 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7c8727e8-a80b-48dc-8da5-c5d73e15609b")
-		(property "Reference" "J2"
-			(at 44.831 276.733 90)
+		(property "Reference" "J4"
+			(at 42.926 276.606 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "HV-"
-			(at 44.831 274.193 90)
+		(property "Value" "V-"
+			(at 42.926 274.066 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6748,7 +6467,7 @@
 		(instances
 			(project "HVI design"
 				(path "/6e774aff-27e0-4346-9be8-67b840f3c91a"
-					(reference "J2")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -7806,10 +7525,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e5779e3d-852d-4aa8-b787-11267d9d6d3b")
-		(property "Reference" "J1"
-			(at 41.91 224.7899 90)
+		(property "Reference" "J3"
+			(at 41.91 225.044 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7817,8 +7535,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "HV+"
-			(at 41.91 227.3299 90)
+		(property "Value" "V+"
+			(at 41.91 227.584 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7916,7 +7634,7 @@
 		(instances
 			(project "HVI design"
 				(path "/6e774aff-27e0-4346-9be8-67b840f3c91a"
-					(reference "J1")
+					(reference "J3")
 					(unit 1)
 				)
 			)
