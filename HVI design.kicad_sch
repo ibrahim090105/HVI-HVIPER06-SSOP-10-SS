@@ -3376,7 +3376,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 91.44) (xy 119.38 91.44)
+			(xy 99.06 91.44) (xy 119.38 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4196,7 +4196,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 91.44) (xy 93.98 91.44)
+			(xy 87.63 91.44) (xy 91.44 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4841,7 +4841,7 @@
 		(dnp no)
 		(uuid "0e33cab5-b514-4868-a985-dd52ac0ed2a0")
 		(property "Reference" "C2"
-			(at 114.3 97.028 0)
+			(at 113.538 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4849,8 +4849,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "optional"
-			(at 109.22 99.822 0)
+		(property "Value" "10nF"
+			(at 112.522 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4971,7 +4971,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 97.79 91.44 90)
+		(at 95.25 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4980,7 +4980,7 @@
 		(fields_autoplaced yes)
 		(uuid "1713000b-8f8e-4d87-80c1-332272e6584e")
 		(property "Reference" "F1"
-			(at 97.79 85.09 90)
+			(at 95.25 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4988,7 +4988,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 97.79 87.63 90)
+			(at 95.25 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4996,7 +4996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 93.218 90)
+			(at 95.25 93.218 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5005,7 +5005,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 91.44 0)
+			(at 95.25 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5014,7 +5014,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 97.79 91.44 0)
+			(at 95.25 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5123,8 +5123,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1 µF"
-			(at 201.93 133.35 0)
+		(property "Value" "0.1µF"
+			(at 201.93 132.842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5376,7 +5376,7 @@
 		(dnp no)
 		(uuid "38612d4c-e7ad-47b0-a1f5-9ee9a32d0bd1")
 		(property "Reference" "R4"
-			(at 188.976 131.318 0)
+			(at 187.706 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5385,7 +5385,7 @@
 			)
 		)
 		(property "Value" "22.1k"
-			(at 186.69 133.35 0)
+			(at 186.182 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5512,7 +5512,7 @@
 		(dnp no)
 		(uuid "39859d65-58c5-4e2c-a282-890011f02ac8")
 		(property "Reference" "R3"
-			(at 260.858 110.998 0)
+			(at 262.636 108.966 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5520,8 +5520,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 262.8899 110.49 0)
+		(property "Value" "21.5k"
+			(at 264.414 110.744 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5895,7 +5895,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "2.49k"
 			(at 259.08 129.5399 0)
 			(effects
 				(font
@@ -5956,7 +5956,7 @@
 		(dnp no)
 		(uuid "668897ed-b13e-4c5b-81cb-6c41d8f144cc")
 		(property "Reference" "C5"
-			(at 196.596 137.922 0)
+			(at 186.182 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5965,7 +5965,7 @@
 			)
 		)
 		(property "Value" "0.1µF"
-			(at 195.58 139.7 0)
+			(at 185.166 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7022,7 +7022,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a841b9c1-66d1-4b0a-8fb7-d46ad6006c78")
 		(property "Reference" "C4"
 			(at 254 96.5199 0)
@@ -7033,8 +7032,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 254 99.0599 0)
+		(property "Value" "10uF"
+			(at 253.238 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
